@@ -1,0 +1,8 @@
+[Runtime]
+name=org.kde.Platform.mytestlib
+runtime=org.kde.Platform/x86_64/5.11
+sdk=org.kde.Sdk/x86_64/5.11
+
+[ExtensionOf]
+ref=runtime/org.kde.Platform/x86_64/5.11
+runtime=org.kde.Platform/x86_64/5.11

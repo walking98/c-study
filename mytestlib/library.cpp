@@ -2,6 +2,6 @@
 
 #include <iostream>
 
-void hello(char * message) {
+void sayMessage(char * message) {
     std::cout << "Hello World!" << message << std::endl;
 }

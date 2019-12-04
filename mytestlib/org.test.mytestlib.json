@@ -1,0 +1,34 @@
+{
+  "id": "org.kde.Platform.mytestlib",
+  "branch": "1",
+  "runtime": "org.kde.Platform",
+  "runtime-version": "5.11",
+  "sdk": "org.kde.Sdk//5.11",
+  "build-extension": true,
+  "separate-locales": false,
+  "appstream-compose": false,
+  "build-options": {
+    "prefix": "/app/extensions"
+  },
+  "modules": [
+    {
+      "name": "hello",
+      "buildsystem": "simple",
+      "build-commands": [
+        "echo ${FLATPAK_DEST}",
+        "mkdir -p ${FLATPAK_DEST}/mytestlib/include",
+        "mkdir -p ${FLATPAK_DEST}/mytestlib/lib",
+        "cp ./library.h ${FLATPAK_DEST}/mytestlib/include",
+        "cp ./cmake-build-debug/libmytestlib.so ${FLATPAK_DEST}/mytestlib/lib"
+      ],
+      "sources": [
+        {
+          "type": "dir",
+          "path": "."
+        }
+      ],
+      "post-install" : [
+
+      ]    }
+  ]
+}

@@ -5,5 +5,5 @@
 
 int main (int argc, const char * argv[]) {
     char text[] = "wiseking";
-    hello(text);
+    sayMessage(text);
 }
